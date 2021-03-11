@@ -27,7 +27,7 @@ const StyledA = styled.a`
     text-decoration: none;
     cursor: pointer;
     &:hover{
-        background-color:#dae0e5!important;
+        background-color:#dae0e5;
         border-width: 1px 0 1px;
     }
 
