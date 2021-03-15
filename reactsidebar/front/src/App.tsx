@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import Sidebar from './route/sidebar';
 import styled from "styled-components";
 import Navbar from './route/navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {

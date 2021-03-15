@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import styled from "styled-components";
 import { useHistory } from 'react-router-dom';
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown'
 
 function Navbar({change, menu}:any){
     const sidebar =() =>{
@@ -17,7 +19,7 @@ function Navbar({change, menu}:any){
     return(
         <nav style={{backgroundColor:'#f8f9fa',borderBottom:'1px solid #dee2e6',flexFlow:'row nowrap',justifyContent:'space-between',
         position:'relative',display:'flex',padding:'.5rem 1rem'}}>
-            <Button onClick={sidebar}>Menue</Button>
+            <Button onClick ={sidebar}>Menue</Button>
             <Button2>
                 <span>aa</span>
             </Button2>
@@ -29,9 +31,11 @@ function Navbar({change, menu}:any){
                     <li style={{display:'list-item', textAlign:'match-parent'}}>
                         <a style={{paddingRight:'.2rem',paddingLeft:'.5rem',display:'block',padding:'.5rem'}}>안농2</a>
                     </li>
-                    <li style={{display:'list-item', textAlign:'match-parent'}}>
-                        <a style={{paddingRight:'.5rem',paddingLeft:'.5rem',display:'block',padding:'.5rem'}}>{view}</a>
-                    </li>
+                    <DropdownButton id="dropdown-basic-button" title="Dropdown">
+                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    </DropdownButton>
                 </ul>
             </StyledDiv>
         </nav>

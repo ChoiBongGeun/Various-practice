@@ -25,10 +25,14 @@ const StyledA = styled.a`
     padding: .75rem 1.25rem;
     border: 1px solid rgba(0,0,0,.125);
     text-decoration: none;
+    color:black;
     cursor: pointer;
     &:hover{
-        background-color:#dae0e5;
+        background-color:#dae0e5!important;
         border-width: 1px 0 1px;
+        text-decoration: none;
+        color:black;
+        font-weight : bold;
     }
 
 `;
